@@ -1,0 +1,13 @@
+name: "home_automation_basic_eval"
+description: "Basic eval for home automation agent"
+
+cases:
+  - name: "Turn on lights"
+    input: "Turn on the living room lights"
+    expected:
+      contains: ["living room", "on"]
+
+  - name: "Set temperature"
+    input: "Set the thermostat to 22 degrees"
+    expected:
+      contains: ["22"]
